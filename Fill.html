@@ -1,0 +1,27 @@
+<html>
+<body>
+<form id="personal" type='post'>
+<p>Fill this form</p>
+<label>First Name</label>
+<input type='text' id='firstName' name='firstName'>
+<label>Last Name</label>
+<input type='text' id='lastName' name='lastName'>
+<label>Age</label>
+<input type='text' id='age' name='age'>
+<label>Password</label>
+<input type='password' id='password' name='password'>
+<label>School</label>
+<input type='text' id='school' name='school'>
+<button type="reset">Reset</button>
+<button type='submit'>Submit</button>
+</form>
+</body>
+<script type="text/javascript" src ="./jquery.js"></script>
+<script type="text/javascript" src ="./autosave.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		$('#personal').autosave();
+	});
+	
+</script>
+</html>
